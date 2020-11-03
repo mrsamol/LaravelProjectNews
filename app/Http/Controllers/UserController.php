@@ -51,7 +51,7 @@ class UserController extends Controller
         $user->first_name=$request->first_name;
         $user->last_name=$request->last_name;
         $user->email=$request->email;
-        $user->password=$request->password;
+        $user->password=bcrypt($request->password);
         $user->dob=$request->dob;
         $user->education=$request->education;
          if (!empty($request->profile)) {

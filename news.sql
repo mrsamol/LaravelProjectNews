@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2020 at 04:05 AM
+-- Generation Time: Nov 03, 2020 at 07:14 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -200,7 +200,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `email_verified_at`, `password`, `profile`, `dob`, `education`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Pen', 'Samol', 'admin@admin.com', NULL, '$2y$12$Hj3gQI3LDCdeTkoQeqC7bes/c84D48ohup8KX5puylnYLc6dtPihO', '1604113526.ErXNikJL.jpg', '2020-10-10', 'CICI', 1, NULL, '2020-09-20 17:00:00', '2020-10-30 20:05:26');
+(1, 'Pen', 'Samol', 'admin@admin.com', NULL, '$2y$12$Hj3gQI3LDCdeTkoQeqC7bes/c84D48ohup8KX5puylnYLc6dtPihO', '1604113526.ErXNikJL.jpg', '2020-10-10', 'CICI', 1, NULL, '2020-09-20 17:00:00', '2020-10-30 20:05:26'),
+(2, 'AM', 'SAMOL', 'amsamoll@gmail.com', NULL, '123456', '1604384059.ErXNikJL.jpg', '2020-11-03', 'CICI', 1, NULL, '2020-11-02 22:48:41', '2020-11-02 23:14:19');
 
 --
 -- Indexes for dumped tables
@@ -300,7 +301,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

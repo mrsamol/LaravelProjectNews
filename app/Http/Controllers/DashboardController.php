@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\User;
+use App\Models\Category;
+use App\Models\Post;
+use App\Models\Setting;
+use App\Models\Slider;
 class DashboardController extends Controller
 {
     /**
@@ -13,7 +17,18 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('admins.layout.index');
+        $users = User::all();
+        $categories = Category::all();
+        $settings = Setting::all();
+        $sliders = Slider::all();
+        $posts = Post::all();
+        $countusers = count($users);
+        $countcategories = count($categories);
+        $countsliders = count($sliders);
+        $countposts = count($posts);
+        $countsettings = count($settings);
+
+        return view('admins.layout.index',compact('countusers','countcategories','countsettings','countposts','countsliders'));
     }
 
     /**
